@@ -1,7 +1,7 @@
 <template lang="html">
 
     <div class="events">
-        <button type="button" name="button" v-on:click="counter+= 1">test</button>
+        <button type="button" name="button" @click="msg('s')">test</button>
     </div>
 </template>
 
@@ -13,8 +13,8 @@
           }
         },
         methods:{
-            msg:function () {
-                window.console.log(Math.random())
+            msg:function (a) {
+                window.console.log(Math.random(),a)
             }
         }
     }
