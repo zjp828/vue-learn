@@ -11,7 +11,13 @@
     <noscript>
       <strong>We're sorry but vue-learn doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    <div id="app">
+      <!--router路径配置的文件将渲染在这个标签中-->
+      <router-view></router-view>
+      <!--router-link会被包装成a标签，点击跳转到对应路径 -->
+      <router-link to="/pageb">Go to pageb</router-link>
+      <router-link to="/">Go to pagea</router-link>
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
